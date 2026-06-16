@@ -1,0 +1,7 @@
+CREATE TABLE Clientes (
+    ClienteID INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(150) UNIQUE,
+    Telefone VARCHAR(20),
+    DataCadastro DATE DEFAULT CURRENT_DATE
+);
